@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Url Capitalize</title>
+</head>
+<body>
+    <p>Enter a url</p>
+    <input type="url" id="input"><br><br>
+    <input type="submit" value="Capitalize" id="url1"style="color:red">
+
+
+<script>
+    document.getElementById("url1").onclick=function urlCapital() {
+        var URL1=document.getElementById("input").value;
+        var a=(capital_letter(URL1));
+        document.write(a);
+    }
+    function capital_letter(str) 
+    {
+        str = str.split(" ");
+
+        for (var i = 0, x = str.length; i < x; i++) {
+            str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+        }
+
+        return str.join(" ");
+       
+       
+    }
+   
+   
+   
+</script>
+  
+</body>
+
+</html>

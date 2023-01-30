@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(20, 31, 31);
+}
+
+
+ 
+.header {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: 50px;
+    color: #000;
+    transform: translate(-50%, -50%);
+  }
+  .row1{
+    position: absolute;
+    top: 95%;
+   
+   width: 70%;
+   margin-left: 7%;
+
+
+  }
+.para{
+  text-align:center;
+  margin-top: 20PX;
+  color: white;
+}
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+.topnav {
+  position: absolute;
+  top: 23px;
+    opacity: 0.5;  
+}
+.button{
+  
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.date{
+  position: absolute;
+  top: 55%;
+  left: 16px
+}
+.img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card{
+ border-radius: 30px;
+}

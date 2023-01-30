@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Javascript</title>
+</head>
+<body>
+    <!--<p>Login</p>
+    <input type="text" id="name"><br><br>
+    <input type="password"id ="pass"><br><br>
+    <button id="loginForm">login</button>
+    -->
+    <p>How many fingers are you holding up?</p>
+    <p>
+        <select id="myNumber">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4 </option>
+            <option>5</option>
+
+        </select>
+        <button id="guess">Guess</button>
+    </p>
+    <script type="text/Javascript">
+      /* 
+      Array
+       var a=10;
+        document.write(a);
+        
+        var name="Ram";
+        document.write(name);
+        var myArray=new Array();
+        myArray[0]="monday";
+        myArray[1]="Thusday";
+        myArray[2]="Wensday";
+        myArray[3]="Thusday";
+        myArray[4]="Friday";
+        myArray[5]="Saterday";
+        myArray[6]="Sunday";
+        document.write(myArray);
+        */
+        /*
+        Login Form
+
+        document.getElementById("loginForm").onclick=function(){
+            var password=document.getElementById("pass").value;
+            var loginPass="pass@123";
+            if(loginPass==password){
+                alert("Login Successfuly")
+            }else{
+                alert("please try again")
+            }
+        }
+        */
+        /*
+        //for loop
+        for (var i=1;i<5;i++){
+            document.write(i);
+            document.write("\n");
+           
+        }
+        */
+        /*
+        var i=1;
+        while(i<6){
+            document.write(i);
+            document.write("\n");
+            i++;
+        }
+        document.write("value of i is"+i);
+        */
+        
+            
+        document.getElementById("guess").onclick = function() {
+                
+                var myNumber = document.getElementById("myNumber").value;
+                
+                var gotIt = false;
+                
+                var numberOfGuesses = 1;
+                
+                while (gotIt == false) {
+                
+                    var guess = Math.random();
+
+                    guess = guess * 6;
+
+                    guess = Math.floor(guess);
+
+                    if (guess == myNumber) {
+                        
+                        gotIt = true;
+
+                        alert ("Got it! It was a " + guess + ". It took me " + numberOfGuesses + " guesses.");
+
+                    } else {
+
+                        numberOfGuesses++;
+
+                    }
+                
+                }
+                
+            }
+            
+            
+        
+    </script>
+</body>
+</html>

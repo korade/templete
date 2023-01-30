@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Promise</title>
+</head>
+<body>
+    <script type="text/javascript">
+    function prom(a,b){
+       return new Promise(function(resolve, reject){
+           c=a/b;
+            if(a,b){
+                resolve('I am successful');
+            }else{
+                reject("I am failed");
+            }
+        });
+      }
+      let onfulfilment=(result)=>{
+          console.log(result);
+      }
+      let onRejection=function(error){
+          console.log(error);
+      }
+      prom(9,3).then(onfulfilment).catch(onRejection);  
+    
+    </script>
+</body>
+</html>
